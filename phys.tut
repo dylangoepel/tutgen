@@ -1,0 +1,39 @@
+[Widerstand]
+init = "In einen Stromkreis wird ein Widerstand geschaltet."
+U = ["Die angelegte Spannung U ist {}.", "Bestimme die angelegte Spannung.", "V"]
+R = ["Der ohmsche Widerstand beträgt {}.", "Bestimme den ohmschen Widerstand", "\\Omega"]
+I = ["Der durch den Widerstand fließende Strom ist {}.", "Bestimme die Stromstärke", "A"]
+laws = [
+    "U = R * I",
+]
+
+[PlattenkondensatorProbeelement]
+init = "Ein Probekörper befindet sich in einem Plattenkondensator."
+U = ["Zwischen den Platten herscht eine Spannung von {}.", "Welche Spannung herscht zwischen den Platten?", "V"]
+F = ["Auf den Körper wirkt eine Kraft von {}.", "Welche Kraft wirkt auf den Körper?", "N"]
+a = ["Der Körper wird beschleunigt mit {}.", "Wie schnell beschleunigt der Körper?", "m/s^2"]
+E = ["Die elektrische Feldstärke beträgt {}. ", "Bestimme die Elektrische Feldstärke.", "N/C"]
+Q = ["Die Ladung des Probekörpers beträgt {}.", "Bestimme die Ladung des Probekörpers.", "C"]
+d = ["Die Distanz zwischen den Platten ist {}.", "Wie weit sind die Platten voneinander entfernt?", "m"]
+m = ["Die Masse des Körpers beträgt {}.", "Wie viel wiegt der Körper?", "kg"]
+v = ["Beschleunigt er von der positiv geladenen zur negativ geladenen Platte, so erreicht der Körper eine Maximalgeschwindigkeit von {}", "Welche Maximalgeschwindigkeit erreicht der Körper, wenn er von der positiv geladenen zur negativ geladenen Platte beschleunigt?", "m/s"]
+t = ["Zur Durchquerung benötigt der Körper {}.", "Wie lange braucht der Körper zur Durchquerung des Kondensators?", "s"]
+laws = [
+    "U = F * d / Q",
+    "E = F / Q",
+    "F = m * a",
+    "v = sqrt( 2 * F * d / m )",
+    "v = a * t"
+]
+
+[Akkumulator]
+init = "Man betrachte einen einfachen Stromkreis bestehend aus einem Akkumulator und einer Glühlampe."
+U = ["Beide haben eine Betriebsspannung von {}.", "Bestimme die Betriebsspannung.", "V"]
+I = ["Zum Leuchten benötigt die Glühlampe einen Strom von {}.", "Welche Stromstärke fließt durch die Glühlampe?", "A"]
+R = ["Der Widerstand der Glühlampe beträgt {}.", "Welchen Widerstand muss die Glühlampe haben?", "\\Omega"]
+Q = ["Der Akkumulator trägt die Aufschrift {}.", "Welche Ladung muss der Akkumulator speichern können?", "C"]
+t = ["Bei voller Ladung kann die Glühlampe {} lang betrieben werden.", "Wie lange kann die Glühlampe bei voller Ladung betrieben werden?", "s"]
+laws = [
+    "U = R * I",
+    "t = Q / I",
+]
